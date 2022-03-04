@@ -2,7 +2,7 @@
 /**
  * index.php
  * User: Selester
- * Date: 2022. 02. 24.
+ * Date: 2022-02-24
  * Time: 14:10
  */
 
