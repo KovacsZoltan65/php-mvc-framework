@@ -1,0 +1,18 @@
+A public könyvtárból kell indítani
+php -S localhost:8080
+
+composer require vlucas/phpdotenv
+
+php migrations.php
+
+git első feltöltés
+
+git init
+git status
+git add .
+git status
+git commit -m "Initial commit"
+git remote add origin https://github.com/KovacsZoltan65/php-mvc-framework.git
+git push origin master
+
+packagist publikáció

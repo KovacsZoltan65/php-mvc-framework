@@ -1,0 +1,18 @@
+{
+    "name": "KovacsZoltan65/php-mvc-framework",
+    "authors": [
+        {
+            "name": "KovacsZoltan65",
+            "email": "zoltan1_kovacs@msn.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
