@@ -11,8 +11,8 @@ namespace app\core;
 
 /**
  * Description of Model
- *
- * @author Selester
+ * @package app\core
+ * @author kzoltan
  */
 abstract class Model 
 {

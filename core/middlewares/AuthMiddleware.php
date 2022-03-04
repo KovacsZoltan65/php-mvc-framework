@@ -16,7 +16,7 @@ use app\core\exception\ForbiddenException;
 /**
  * Description of AuthMiddleware
  *
- * @author Selester
+ * @author kzoltan
  */
 class AuthMiddleware extends BaseMiddleware 
 {

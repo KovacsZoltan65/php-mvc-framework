@@ -13,8 +13,8 @@ use app\core\db\DbModel;
 
 /**
  * Description of UserModel
- *
- * @author Selester
+ * @package app\core
+ * @author kzoltan
  */
 abstract class UserModel extends DbModel
 {

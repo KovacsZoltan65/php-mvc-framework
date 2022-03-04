@@ -3,6 +3,8 @@
 use app\core\form\TextAreaField;
 
 /** 
+ * @package app\views
+ * @author kzoltan
  * @var $this \app\core\View 
  * @var $model \app\models\ContactForm
  */

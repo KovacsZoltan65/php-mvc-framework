@@ -14,7 +14,7 @@ use app\core\form\BaseField;
 /**
  * Description of TextAreaField
  *
- * @author Selester
+ * @author kzoltan
  */
 class TextAreaField extends BaseField
 {

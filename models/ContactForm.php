@@ -13,7 +13,7 @@ use app\core\Model;
 
 /**
  * Description of ContactForm
- *
+ * @package app\models
  * @author kzoltan
  */
 class ContactForm extends Model

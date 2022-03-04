@@ -1,7 +1,7 @@
 <?php
 /**
  * index.php
- * User: Selester
+ * User: kzoltan
  * Date: 2022-02-24
  * Time: 14:10
  */

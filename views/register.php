@@ -1,5 +1,10 @@
 <?php
-/** @var $model \app\models\User */
+/**
+ /** 
+ * @package app\views
+ * @author kzoltan 
+ * @var $model \app\models\User 
+ * */
 ?>
 
 <h1>Create an account</h1>

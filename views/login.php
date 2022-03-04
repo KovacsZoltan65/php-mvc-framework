@@ -1,5 +1,9 @@
 <?php
-/** @var $model \app\models\User */
+/** 
+ * @package app\views
+ * @author kzoltan
+ * @var $model \app\models\User 
+ * */
 ?>
 
 

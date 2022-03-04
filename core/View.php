@@ -11,8 +11,8 @@ namespace app\core;
 
 /**
  * Description of View
- *
- * @author Selester
+ * @package app\core
+ * @author kzoltan
  */
 class View 
 {

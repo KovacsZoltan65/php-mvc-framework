@@ -9,6 +9,11 @@
 
 namespace app\core;
 
+/**
+ * Description of Request
+ * @package app\core
+ * @author kzoltan
+ */
 class Request
 {
 	public function getPath()

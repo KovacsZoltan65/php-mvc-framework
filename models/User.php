@@ -13,8 +13,8 @@ use app\core\UserModel;
 
 /**
  * Description of RegisterModel
- *
- * @author Selester
+ * @package app\models
+ * @author kzoltan
  */
 class User extends UserModel
 {

@@ -11,7 +11,11 @@ namespace app\core;
 use app\core\Request;
 use app\core\Response;
 use app\core\exception\NotFoundException;
-
+/**
+ * Description of Router
+ * @package app\core
+ * @author kzoltan
+ */
 class Router
 {
 	public Request $request;

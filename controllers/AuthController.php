@@ -20,7 +20,7 @@ use app\core\middlewares\AuthMiddleware;
 /**
  * Description of AuthController
  *
- * @author Selester
+ * @author kzoltan
  */
 class AuthController extends Controller 
 {

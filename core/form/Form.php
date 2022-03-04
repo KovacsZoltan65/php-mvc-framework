@@ -15,7 +15,7 @@ use app\core\form\InputField;
 /**
  * Description of Form
  *
- * @author Selester
+ * @author kzoltan
  */
 class Form 
 {

@@ -12,7 +12,7 @@ namespace app\core\middlewares;
 /**
  * Description of BaseMiddleware
  *
- * @author Selester
+ * @author kzoltan
  */
 abstract class BaseMiddleware 
 {

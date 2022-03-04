@@ -11,8 +11,8 @@ namespace app\core;
 
 /**
  * Description of Session
- *
- * @author Selester
+ * @package app\core
+ * @author kzoltan
  */
 class Session 
 {

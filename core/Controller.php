@@ -13,7 +13,7 @@ use app\core\middlewares\BaseMiddleware;
 
 /**
  * Description of Controller
- *
+ * @package app\core
  * @author kzoltan
  */
 class Controller 

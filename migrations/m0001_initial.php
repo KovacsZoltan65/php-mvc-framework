@@ -3,7 +3,7 @@
 /**
  * m0001_initial.php
  * User: kzoltan
- * Date: 2022. 02. 28.
+ * Date: 2022-02-28
  * Time: 14:30
  */
 

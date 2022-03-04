@@ -22,6 +22,7 @@ use app\core\View;
 /**
  * Class Application
  * @package app\core
+ * @author kzoltan
  */
 class Application 
 {
