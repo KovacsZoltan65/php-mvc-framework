@@ -33,6 +33,7 @@ class SiteController extends Controller
     public function contact(Request $request, Response $response)
     {
         $contact = new ContactForm();
+        
         if($request->isPost())
         {
             $contact->loadData($request->getBody());
@@ -43,8 +44,10 @@ class SiteController extends Controller
             }
             
         }
+        
         return $this->render('contact', [
             'model' => $contact
         ]);
+        
     }
 }

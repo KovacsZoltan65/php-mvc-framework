@@ -1,7 +1,5 @@
 <?php
 
-use app\core\form\TextAreaField;
-
 /** 
  * @package app\views
  * @author kzoltan
@@ -9,15 +7,18 @@ use app\core\form\TextAreaField;
  * @var $model \app\models\ContactForm
  */
 
+use app\core\form\TextAreaField;
+use app\core\form\Form;
+
 $this->title = 'Contact';
 ?>
 <h1>Contact</h1>
 
-<?php $form = \app\core\form\Form::begin('', 'post') ?>
+<?php $form = Form::begin('', 'post') ?>
 <?php echo $form->field($model, 'subject') ?>
 <?php echo $form->field($model, 'email') ?>
 <?php echo new TextAreaField($model, 'body') ?>
 
 <button type="submit" class="btn btn-primary">Submit</button>
 
-<?php \app\core\form\Form::end() ?>
+<?php Form::end() ?>

@@ -7,7 +7,7 @@
  * Time: 08:27
  */
 
-class m0002_add_password_column
+class m0001_users_add_password_column
 {
     public function up()
     {

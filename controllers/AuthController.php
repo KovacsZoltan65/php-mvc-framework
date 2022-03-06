@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Session.php
+ * AuthController.php
  * User: kzoltan
  * Date: 2022-03-01
  * Time: 14:25

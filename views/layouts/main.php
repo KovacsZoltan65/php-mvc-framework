@@ -41,9 +41,9 @@ use app\core\Application;
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
-                    
+                    <!-- COMPANIES -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="/companies">Companies</a>
                     </li>
                 </ul>
                 <?php if(Application::isGuest()): ?>
