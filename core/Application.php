@@ -11,7 +11,6 @@ namespace app\core;
 use app\core\Controller;
 use app\core\Request;
 use app\core\Response;
-use app\core\Application;
 use app\core\Router;
 use app\core\db\DbModel;
 use app\core\db\Database;
@@ -29,8 +28,8 @@ class Application
     public string $layout = 'main';
     public static string $ROOT_DIR;
     public string $user_class;
-	public Router $router;
-	public Request $request;
+    public Router $router;
+    public Request $request;
     public Response $response;
     public Database $db;
     public ?UserModel $user;
@@ -39,45 +38,39 @@ class Application
     public ?Controller $controller = null;
     public View $view;
 
-	/**
-	 * Application constructor.
-	 */
-	public function __construct($rootPath, array $config)
-	{
+    /**
+     * Application constructor.
+     */
+    public function __construct($rootPath, array $config)
+    {
         $this->user_class = $config['user_class'];
         self::$ROOT_DIR = $rootPath;
         self::$app = $this;
-		$this->request = new Request();
+        $this->request = new Request();
         $this->response = new Response();
         $this->session = new Session();
-		$this->router = new Router($this->request, $this->response);
+        $this->router = new Router($this->request, $this->response);
         $this->view = new View();
 
         $this->db = new Database($config['db']);
         
         $primary_value = $this->session->get('user');
-        if($primary_value)
-        {
+        if($primary_value) {
             $primary_key = $this->user_class::primaryKey();
             $this->user = $this->user_class::findOne([$primary_key => $primary_value]);
-        }
-        else
-        {
+        } else {
             $this->user = null;
         }
-	}
+    }
 
-	/**
-	 * @return Router
-	 */
-	public function run() : void
-	{
-		try 
-        {
+    /**
+     * @return Router
+     */
+    public function run() : void
+    {
+        try {
             echo $this->router->resolve();
-        } 
-        catch (\Exception $e) 
-        {
+        } catch (\Exception $e) {
             $this->response->setStatusCode($e->getCode());
             echo $this->view->renderView('_error', [
                 'exception' => $e,
@@ -110,7 +103,7 @@ class Application
         $this->session->remove('user');
     }
     
-    public function isGuest()
+    public static function isGuest()
     {
         return !self::$app->user;
     }

@@ -1,16 +1,7 @@
 <?php
 
-/**
- * migrations.php
- * User: kzoltan
- * Date: 2022-02-28
- * Time: 14:30
- */
-
 use app\core\Application;
 use Dotenv\Dotenv;
-//use app\controllers\SiteController;
-//use app\controllers\AuthController;
 
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -27,6 +18,4 @@ $config = [
 ];
 
 $app = new Application(__DIR__, $config);
-
-
-$app->db->applyMigrations();
+$app->db->applySeeds();

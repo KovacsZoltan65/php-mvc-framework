@@ -6,13 +6,11 @@
  * Time: 17:12
  */
 
-use app\core\Application;
-
 class m0001_users_trigger_before_insert
 {
 	public function up()
 	{
-		$db = Application::$app->db;
+		$db = app\core\Application::$app->db;
 		$query = "CREATE DEFINER = 'root'@'localhost'
 			TRIGGER mvc_framework.users_BEFORE_INSERT
 				BEFORE INSERT ON mvc_framework.users
@@ -23,7 +21,7 @@ class m0001_users_trigger_before_insert
 				SET NEW.uuid = UUID();
 				SET NEW.checksum = md5(
 					concat(
-						NEW.email, NEW.password, NEW.first_name, NEW.last_name, NEW.status
+						NEW.name, NEW.password, NEW.email, NEW.status
 					)
 				);
 			END;";

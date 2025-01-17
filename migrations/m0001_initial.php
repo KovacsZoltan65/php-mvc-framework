@@ -16,6 +16,7 @@ class m0001_initial
         $query = "CREATE TABLE mvc_framework.users (
 				id              int(11)         NOT NULL AUTO_INCREMENT,
 				name            varchar(255)    NOT NULL COMMENT 'Megnevezés',
+                                email           varchar(255)    NOT NULL COMMENT 'Email cím',
 				status          tinyint(4)      NOT NULL DEFAULT 0 COMMENT 'Státusz; 0 = aktív; 1 = inaktív; 2 =  törölt',
 				uuid            varchar(36)     DEFAULT NULL COMMENT 'Globális azonosító',
 				checksum        varchar(32)     DEFAULT NULL COMMENT 'Ellenörző összeg',

@@ -6,7 +6,7 @@
  * Time: 16:17
  */
 
-class m0002_companiesCreate
+class m0002_companies_create
 {
 	public function up()
 	{
