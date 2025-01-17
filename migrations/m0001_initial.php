@@ -28,7 +28,7 @@ class m0001_initial
 			)
 			ENGINE = INNODB,
 			CHARACTER SET utf8,
-			COLLATE utf8_general_ci;";
+			COLLATE utf8mb3_unicode_ci;";
 
         $db->pdo->exec($query);
     }
